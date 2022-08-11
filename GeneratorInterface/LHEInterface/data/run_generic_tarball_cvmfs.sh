@@ -70,7 +70,7 @@ tar -xaf ${path}
 export TMPDIR=${TMPDIR:-${_CONDOR_SCRATCH_DIR:-/tmp}}
 
 #generate events
-./runcmsgrid.sh $nevt $rnum $ncpu ${@:5}
+./runcmsgrid_LO_tar.sh $nevt $rnum $ncpu ${@:5}
 
 mv cmsgrid_final.lhe $LHEWORKDIR/
 
